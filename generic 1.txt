@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp65
+{
+    class Employee
+    {
+        public static void showDetail<T>(T[] arr)
+        {
+            foreach (T item in arr)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] data = new int[4];
+            data[0] = 1;
+            data[1] = 2;
+            data[2] = 3;
+            data[3] = 4;
+            
+
+            string[] data1 = new string[4];
+            data1[0] = "sdd";
+            data1[1] = "uhjhj";
+            data1[2] = "ujj";
+            data1[3] = "yuhj";
+           
+
+            Employee obj1 = new Employee();
+
+
+            Employee.showDetail(data);
+            Employee.showDetail(data1);
+
+
+            Console.WriteLine("hello bhai");
+            Console.ReadLine();
+        }
+    }
+}
